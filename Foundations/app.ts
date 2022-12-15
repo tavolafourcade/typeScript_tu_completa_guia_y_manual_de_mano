@@ -10,11 +10,11 @@
   
   console.log(hero)
   
-  const a:number = 45
-  let b: number
+  // const a:number = 45
+  // let b: number
   
-  function sayHello(msg: string) {
-    console.log(msg)
-  }
+  // function sayHello(msg: string) {
+  //   console.log(msg)
+  // }
   
 })()

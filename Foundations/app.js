@@ -7,9 +7,9 @@
         age: 45
     };
     console.log(hero);
-    const a = 45;
-    let b;
-    function sayHello(msg) {
-        console.log(msg);
-    }
+    // const a:number = 45
+    // let b: number
+    // function sayHello(msg: string) {
+    //   console.log(msg)
+    // }
 })();
