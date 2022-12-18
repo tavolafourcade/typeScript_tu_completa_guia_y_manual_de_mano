@@ -23,5 +23,5 @@
             return this.name;
         }
     };
-    console.log(flash.getName());
+    console.log(flash.getName()); // El uso de ! sirve para que typescript funcione sin tomar en cuenta el undefined.
 })();
