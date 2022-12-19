@@ -26,4 +26,22 @@ var __rest = (this && this.__rest) || function (s, e) {
     const [capitan, ironman,] = avengersArr;
     console.log({ ironman, capitan });
 })();
+(() => {
+    const ironman = {
+        name: 'Tony Stark',
+        weapon: 'Armour suit'
+    };
+    const capAmerica = {
+        name: 'Capitán América',
+        weapon: 'Shield'
+    };
+    const thor = {
+        name: 'Thor',
+        weapon: 'Mjolnir'
+    };
+    const avengers = [ironman, thor, capAmerica];
+    for (const avenger of avengers) {
+        console.log((avenger.name));
+    }
+})();
 //# sourceMappingURL=main.js.map
