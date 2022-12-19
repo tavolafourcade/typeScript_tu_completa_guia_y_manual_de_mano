@@ -22,6 +22,8 @@ var __rest = (this && this.__rest) || function (s, e) {
         var { ironman } = _a, resto = __rest(_a, ["ironman"]);
         console.log(ironman, resto);
     };
-    printAvenger(avengers);
+    const avengersArr = ['Cap. América', 'Ironman', 'Hulk'];
+    const [capitan, ironman,] = avengersArr;
+    console.log({ ironman, capitan });
 })();
 //# sourceMappingURL=main.js.map

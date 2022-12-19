@@ -27,5 +27,13 @@
     console.log( ironman, resto)
   }
 
-  printAvenger(avengers)
+  // printAvenger(avengers)
+
+  const avengersArr: string[] = ['Cap. América', 'Ironman', 'Hulk']
+  // const ironman = avengersArr[1] //
+
+  //* Con desestructuración
+  const [ capitan, ironman, ] = avengersArr
+
+  console.log({ironman, capitan})
 })()
