@@ -21,6 +21,9 @@
             id: 125,
             zip: 'KY2',
             city: 'Ottawa',
+        },
+        getFullAddress(id) {
+            return this.address.city;
         }
     };
 })();

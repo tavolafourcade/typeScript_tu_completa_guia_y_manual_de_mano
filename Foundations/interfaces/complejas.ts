@@ -4,6 +4,7 @@
     name: string;
     age: number;
     address: Address;
+    getFullAddress( id: string ):void; // Equivalente a getFullAddress(id: string) => void en tipos
   }
 
   interface Address {
@@ -19,6 +20,9 @@
       id:  125,
       zip: 'KY2',
       city: 'Ottawa',
+    },
+    getFullAddress( id: string) {
+      return this.address.city;
     }
   }
 })()
