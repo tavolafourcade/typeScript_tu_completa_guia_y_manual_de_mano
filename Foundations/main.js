@@ -13,4 +13,15 @@
         };
     };
 })();
+(() => {
+    const client = {
+        name: 'Octavio',
+        age: 20,
+        address: {
+            id: 125,
+            zip: 'KY2',
+            city: 'Ottawa',
+        }
+    };
+})();
 //# sourceMappingURL=main.js.map
