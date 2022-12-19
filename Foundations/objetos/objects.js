@@ -1,15 +1,5 @@
 "use strict";
-(
-/*
-
-  TypeScript implícitamente genera el tipado del objeto:
-    let flash: {
-    name: string;
-    age: number;
-    powers: string[];
-    }
-*/
-() => {
+(() => {
     let flash = {
         name: 'Barry Allen',
         age: 24,
@@ -17,11 +7,11 @@
     };
     flash = {
         name: 'Clark Kent',
-        // age: 24,
         powers: ['Super fuerza'],
         getName() {
             return this.name;
         }
     };
-    console.log(flash.getName()); // El uso de ! sirve para que typescript funcione sin tomar en cuenta el undefined.
+    console.log(flash.getName());
 })();
+//# sourceMappingURL=objects.js.map

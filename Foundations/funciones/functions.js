@@ -8,3 +8,4 @@
         return 'Señal activada!';
     };
 })();
+//# sourceMappingURL=functions.js.map
