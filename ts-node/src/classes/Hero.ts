@@ -5,3 +5,5 @@ export class Hero {
     public age: number
     ) {}
 }
+
+export class Hero2 {}
