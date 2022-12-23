@@ -1,36 +1,14 @@
 "use strict";
-(() => {
-    () => {
-        let flash = {
-            name: 'Barry Allen',
-            age: 24,
-            powers: ['Super velocidad', 'Viajar en el tiempo']
-        };
-        let superman = {
-            name: 'Barry Allen',
-            age: 24,
-            powers: ['Super velocidad', 'Viajar en el tiempo']
-        };
+var Validations;
+(function (Validations) {
+    Validations.validateText = (text) => {
+        return (text.length > 3) ? true : false;
     };
-})();
-(() => {
-    const client = {
-        name: 'Octavio',
-        age: 20,
-        address: {
-            id: 125,
-            zip: 'KY2',
-            city: 'Ottawa',
-        },
-        getFullAddress(id) {
-            return this.address.city;
-        }
+    const validateDate = (myDate) => {
+        return (isNaN(myDate.valueOf()))
+            ? false
+            : true;
     };
-})();
-(() => {
-    let addNumbersFunction;
-    addNumbersFunction = (a, b) => {
-        return 10;
-    };
-})();
+})(Validations || (Validations = {}));
+console.log(Validations.validateText('Octavio'));
 //# sourceMappingURL=main.js.map
