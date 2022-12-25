@@ -2,7 +2,7 @@
 // import * as HeroClasses from './classes/Hero' // Alias completo a todo lo que exporta el módulo
 // import powers, {Power} from './data/powers';
 // import { Hero } from './classes/Hero'
-import { printObject, genericFunction } from './generics/generics';
+import { printObject, genericFunction, genericFunctionArrow } from './generics/generics';
 // const Hero = 123
 
 // const ironman = new SuperHero('Ironman', 1, 55)
@@ -20,8 +20,12 @@ printObject( new Date() )
 printObject( 'Hola Mundo' )
 
 console.log(genericFunction(3.14).toFixed(2))
-console.log(genericFunction('Hola').toFixed(2))
+console.log(genericFunction('Hola').toUpperCase())
+console.log(genericFunction(new Date().getDate()))
 
+console.log(genericFunctionArrow(4.345).toFixed(2))
+console.log(genericFunctionArrow('Adios').toUpperCase())
+console.log(genericFunctionArrow(new Date().getDate()))
 
 
 
