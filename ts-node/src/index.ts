@@ -3,6 +3,8 @@
 // import powers, {Power} from './data/powers';
 // import { Hero } from './classes/Hero'
 import { printObject, genericFunction, genericFunctionArrow } from './generics/generics';
+import { Hero } from './interfaces/hero';
+import { Villain } from './interfaces/villain';
 // const Hero = 123
 
 // const ironman = new SuperHero('Ironman', 1, 55)
@@ -30,5 +32,11 @@ import { printObject, genericFunction, genericFunctionArrow } from './generics/g
 
 ////////////////////////////////////////////////
 
+const deadpool = {
+  name: 'Deadpool',
+  realName: 'Wade Winston Wilson',
+  dangerLevel: 130
+}
 
-
+// console.log(genericFunctionArrow<Hero>(deadpool).dangerLevel) // Property 'dangerLevel' does not exist on type 'Hero'
+console.log(genericFunctionArrow<Villain>(deadpool).dangerLevel)
