@@ -15,18 +15,20 @@ import { printObject, genericFunction, genericFunctionArrow } from './generics/g
 
 ////////////////////////////////////////////////
 
-printObject( 123 )
-printObject( new Date() )
-printObject( 'Hola Mundo' )
+// printObject( 123 )
+// printObject( new Date() )
+// printObject( 'Hola Mundo' )
 
-console.log(genericFunction(3.14).toFixed(2))
-console.log(genericFunction('Hola').toUpperCase())
-console.log(genericFunction(new Date().getDate()))
+// console.log(genericFunction(3.14).toFixed(2))
+// console.log(genericFunction('Hola').toUpperCase())
+// console.log(genericFunction(new Date().getDate()))
 
-console.log(genericFunctionArrow(4.345).toFixed(2))
-console.log(genericFunctionArrow('Adios').toUpperCase())
-console.log(genericFunctionArrow(new Date().getDate()))
+// console.log(genericFunctionArrow(4.345).toFixed(2))
+// console.log(genericFunctionArrow('Adios').toUpperCase())
+// console.log(genericFunctionArrow(new Date().getDate()))
 
+
+////////////////////////////////////////////////
 
 
 
