@@ -3,7 +3,15 @@ function printToConsole( constructor: Function) {
   console.log(constructor)
 }
 
-@printToConsole
+const printToConsoleConditional = (print: boolean = false): Function => {
+  if (print){
+    return printToConsole
+  } else {
+    return () => {}
+  }
+}
+
+@printToConsoleConditional(false)
 export class Pokemon {
   public publicApi: string = 'http://pokeapi.co'
 
