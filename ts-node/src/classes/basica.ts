@@ -1,19 +1,19 @@
 (() => {
     class Avenger {
         // Propiedades
-        private nombre: string;
-        private equipo: string;
-        public nombreReal?: string;
+        // private nombre: string;
+        // private equipo: string;
+        // public nombreReal?: string;
 
         // Constructor
-        constructor(nombre: string, equipo: string, nombreReal?: string) {
-            this.nombre = nombre;
-            this.equipo = equipo;
-            this.nombreReal = nombreReal;
-        }
+        constructor(
+          private nombre: string, 
+          private equipo: string, 
+          public nombreReal?: string
+          ) {}
     }
 
-    const antman: Avenger = new Avenger('Antman', 'Cap');
+    const antman: Avenger = new Avenger('Antman', 'Cap', 'Scott Lang');
 
     console.log(antman);
 })()
